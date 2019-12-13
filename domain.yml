@@ -1,0 +1,172 @@
+intents:
+- affirm
+- deny
+- add_parameters
+- reset_parameters
+- more_songs1
+- more_artist1
+- play_song1
+- more_songs2
+- more_artist2
+- play_song2
+- more_songs3
+- more_artist3
+- play_song3
+- out_of_scope
+entities:
+- genre
+- decade
+- voice
+- instrument
+- tempo
+- version
+slots:
+  artist1:
+    type: unfeaturized
+  artist2:
+    type: unfeaturized
+  artist3:
+    type: unfeaturized
+  decade:
+    type: categorical
+    values:
+    - 1950s
+    - 1960s
+    - 1970s
+    - 1980s
+    - 1990s
+    - 2000s
+    - 2010s
+  genre:
+    type: categorical
+    values:
+    - blues
+    - classical
+    - country
+    - electronic
+    - folk
+    - gospel
+    - hip-hop
+    - jazz
+    - latin
+    - pop
+    - reggae
+    - r&b
+    - rock
+    - spoken
+    - traditional
+    - world
+    - modern blues
+    - traditional electric blues
+    - traditional acoustic blues
+    - classical medieval
+    - classical renaissance
+    - classical baroque
+    - classical romantic
+    - contemporary classical
+    - modern classical
+    - traditional country
+    - house
+    - trance
+    - dubstep
+    - downtempo
+    - breakbeat
+    - techno
+    - garage
+    - hardcore
+    - experimental electronic
+    - synthwave
+    - trap
+    - reggaeton
+    - salsa
+    - regional mexican
+    - modern pop
+    - electronic pop
+    - alternative pop
+    - contemporary r&b
+    - classic r&b
+    - soul
+    - funk
+    - disco
+    - alternative rock
+    - metal
+    - punk
+    - early rock
+    - soft rock
+    - experimental rock
+  instrument:
+    type: categorical
+    values:
+    - acoustic guitar
+    - electric guitar
+    - bass guitar
+    - drums
+    - synthesier
+    - keyboard
+    - piano
+    - strings
+    - viola
+    - cello
+    - double bass
+    - harp
+    - flute
+    - clarinet
+    - oboe
+    - saxophone
+    - bassoon
+    - trumpet
+    - trombone
+    - french horn
+    - euphonium
+    - tuba
+    - organ
+    - accordian
+  isrc1:
+    type: unfeaturized
+  isrc2:
+    type: unfeaturized
+  isrc3:
+    type: unfeaturized
+  song1:
+    type: unfeaturized
+  song2:
+    type: unfeaturized
+  song3:
+    type: unfeaturized
+  tempo:
+    type: categorical
+    values:
+    - fast
+    - medium
+    - slow
+  version:
+    type: categorical
+    values:
+    - remix
+    - explicit
+    - cover
+    - clean
+    - live
+  voice:
+    type: categorical
+    values:
+    - female
+    - male
+    - choir
+templates:
+  utter_default:
+  - text: "Hey!\ntry entering song attributes: genre, decade, instruments, tempo,\
+      \ version, vocal"
+actions:
+- action_add_parameters
+- action_reset_parameters
+- action_play_song1
+- action_more_songs1
+- action_more_artist1
+- action_play_song2
+- action_more_songs2
+- action_more_artist2
+- action_play_song3
+- action_more_songs3
+- action_more_artist3
+- utter_default
