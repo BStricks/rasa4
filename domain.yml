@@ -1,18 +1,27 @@
 intents:
-- affirm
-- deny
 - add_parameters
-- reset_parameters
-- more_songs1
-- more_artist1
-- play_song1
-- more_songs2
-- more_artist2
-- play_song2
-- more_songs3
-- more_artist3
-- play_song3
+- reset_parameters:
+    triggers: action_reset_parameters
+- more_songs1:
+    triggers: action_more_songs1
+- more_artist1:
+    triggers: action_more_artist1
+- play_song1:
+    triggers: action_play_song1
+- more_songs2:
+    triggers: action_more_songs2
+- more_artist2:
+    triggers: action_more_artist2
+- play_song2:
+    triggers: action_play_song2
+- more_songs3:
+    triggers: action_more_songs3
+- more_artist3:
+    triggers: action_more_artist3
+- play_song3:
+    triggers: action_play_song3
 - out_of_scope
+
 entities:
 - genre
 - decade
@@ -20,6 +29,7 @@ entities:
 - instrument
 - tempo
 - version
+
 slots:
   artist1:
     type: unfeaturized
@@ -155,7 +165,7 @@ slots:
     - choir
 templates:
   utter_default:
-  - text: "Hey!\ntry entering song attributes: genre, decade, instruments, tempo,\
+  - text: "Hey!\n Try entering song attributes: genre, decade, instruments, tempo,\
       \ version, vocal"
 actions:
 - action_add_parameters
@@ -170,3 +180,4 @@ actions:
 - action_more_songs3
 - action_more_artist3
 - utter_default
+

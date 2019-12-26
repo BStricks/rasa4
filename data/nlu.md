@@ -30,6 +30,8 @@
 - i want a [blues](genre) song
 - i want a [choir](voice)
 - find [jazz](genre) songs
+- find [1990s](decade) [rock](genre) music
+- find [slow](tempo) [piano](genre) songs
 - [Jazz](genre:jazz) songs
 - [classical](genre) songs
 - [classical baroque](genre) songs
@@ -71,6 +73,7 @@
 - [piano](instrument) and [strings](instrument)
 - [fast](tempo) tempo
 - [medium](tempo) tempo
+- [slow](tempo songs
 - with [slow](tempo) tempo
 - [slow](tempo) tempo only
 - [1960s](decade)
@@ -85,21 +88,9 @@
 - [Fast](tempo:fast)
 - [Clean](version:clean)
 - [jazz](genre) songs from [1950s](decade)
-
-## intent:affirm
-- yes
-- indeed
-- of course
-- that sounds good
-- correct
-
-## intent:deny
-- no
-- never
-- I don't think so
-- don't like that
-- no way
-- not really
+- [blues](genre) from the [1950s](decade
+- [1990s](decade) [hip hop](genre)
+- [classical](genre) music with [piano](instrument)
 
 ## intent:out_of_scope
 - Hi
@@ -108,7 +99,7 @@
 - greetings
 - are you there
 - start
-- search for congs
+- search for songs
 - begin
 - song search
 - how is it going
@@ -120,36 +111,12 @@
 - please help me find songs
 - i want some songs
 - hi
+- help
+- search songs
+- find songs
+- search
+- restart
 
-## intent:reset_parameters
-- /reset_parameters
-
-## intent:more_artist1
-- /more_artist1
-
-## intent:more_songs1
-- /more_songs1
-
-## intent:play_song1
-- /play_song1
-
-## intent:more_artist2
-- /more_artist2
-
-## intent:more_songs2
-- /more_songs2
-
-## intent:play_song2
-- /play_song2
-
-## intent:more_artist3
-- /more_artist3
-
-## intent:more_songs3
-- /more_songs3
-
-## intent:play_song3
-- /play_song3
 
 ## synonym:classical
 - Classical
@@ -180,3 +147,20 @@
 
 ## synonym:rock
 - Rock
+
+##synonym:1950s
+-1950
+
+##synonym:1960s
+-1960
+
+##synonym:1970s
+-1970
+
+##synonym:1980s
+-1980
+
+##synonym:1990s
+-1990
+
+
